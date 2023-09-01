@@ -29,11 +29,11 @@
             <img src="image/Logo.png" alt="">
          
           </div>
-          <div class="navbar-center hidden lg:flex">
+          <div class=" show-container navbar-center hidden lg:flex">
             <ul class="menu menu-horizontal px-1">
               
               <li tabindex="0">
-                <a class="btn text-center py-4">Sort by view</a>
+                <a onclick="showClick()" class="btn text-center py-4">Sort by view</a>
                
               </li>
              
@@ -41,7 +41,7 @@
           </div>
           <div class="navbar-end">
             <!-- <a onclick="window.location.href.https://forum.freecodecamp.org/t/onclick-new-window/497570" class="">Blog</a> -->
-            <button class="btn" onClick="window.location.href='http://127.0.0.1:5500/Quesation.html';"> 
+            <button class="btn active:bg-pink-500" onClick="window.location.href='http://127.0.0.1:5500/Quesation.html';"> 
               <span class="icon">Blog</span>
          </button>
           </div>
@@ -64,7 +64,7 @@
      
     </header>
     
-    <main>
+    <main class="conatiner mx-auto">
       <div id="card-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
         <!-- <div class="card w-96 bg-base-100 shadow-xl">
           <figure>

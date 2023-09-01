@@ -1,7 +1,15 @@
 const handleClick=()=>{
 const onclick=document.getElementById('handleClick');
-
 }
+const showClick=()=>{
+  const showContainer=document.getElementById('show-container')
+  const div=document.createElement('div');
+  
+  showContainer.appendChild(div)
+console.log('clicked')
+}
+
+
 const handleCategories=async()=>{
 const res=await fetch('https://openapi.programming-hero.com/api/videos/categories');
 const data=await res.json();

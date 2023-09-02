@@ -78,6 +78,12 @@ const handleLodeVideo= async(categoryID)=>{
   
   </div>
     `
+    
+if(Array.length===0)
+{
+  console.log('clicked')
+}
+
     cardContainer.appendChild(div)
 
  });
@@ -96,20 +102,23 @@ const handleLodeVideo= async(categoryID)=>{
 //     console.log('Already Add a data')
 //   }
 //  }
-// const buttonClick=async()=>{
-//   const res=await fetch('https://openapi.programming-hero.com/api/videos/category/1005');
-//   const clicked=document.getElementById('click-container')
-//   const clickContainer=document.getElementById('click-Container')
-//   const click=await res.json();
-//   const div=document.createElement('div');
-//   div.innerHTML=`
-//             <img src="/image/Icon.png" alt="">
-//   `
-//    clickContainer.appendChild(div);
- 
-//   console.log('click')
-//   }
-
+const buttonClick=async()=>{
+  const res=await fetch('https://openapi.programming-hero.com/api/videos/category/1005');
+  const clicked=document.getElementById('drowing-button')
+  const data=await res.json();
+  const div=document.createElement('div');
+  div.innerHTML=`
+  
+  `
+  if (Array.length===0) {
+    console.log('clicked')
+  }
+  else{
+    console.log('Error')
+  }
+  
+  }
+  buttonClick();
 }
 
 handleLodeVideo("1000")
